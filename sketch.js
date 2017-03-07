@@ -7,6 +7,9 @@ var attrs;
 var backgroundImg;
 var Test;
 
+var BLACK = '#000000';
+
+
 //Preloads the images to be used in Console
 function preload() {
  backgroundImg = loadImage("images/BackgroundTest1.png");
@@ -21,7 +24,7 @@ function setup() {
  initMenuVariables();
 
  console.log("FGHAFGHADGHGH");
- Test = new TestScene(backgroundImg);
+ Test = new TestScene(backgroundImg, "Press P to start");
  stage.addScene('TestScene', Test);
  stage.transitionTo('TestScene');
 
